@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Your Name — SAIFU RAHMAT</title>
+  <meta name="description" content="Portfolio of Your Name, a Computer Science student building software projects." />
+  <link rel="icon" href="assets/icons/favicon.svg" type="image/svg+xml" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ============ NAV ============ -->
+  <header class="nav" id="nav">
+    <div class="nav__inner">
+      <a href="#home" class="nav_logo">yourname<span class="nav_logo-dot">.</span>dev</a>
+
+      <nav class="nav__links" id="navLinks">
+        <a href="#about">about</a>
+        <a href="#skills">skills</a>
+        <a href="#projects">projects</a>
+        <a href="#contact">contact</a>
+      </nav>
+
+      <a href="#contact" class="nav__cta">let's talk</a>
+
+      <button class="nav__toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- ============ HERO ============ -->
+  <section class="hero" id="home">
+    <div class="hero__inner">
+      <div class="hero__text">
+        <p class="hero__kicker">Computer Science Student</p>
+        <h1 class="hero__title">
+          I build things<br />with code, then<br />explain how they work.
+        </h1>
+        <p class="hero__sub">
+          BS Computer Science student focused on web development, data structures,
+          and building small tools that solve real problems. Currently open to
+          internships and collaborative projects.
+        </p>
+        <div class="hero__actions">
+          <a href="#projects" class="btn btn--primary">See my work</a>
+          <a href="assets/resume.pdf" class="btn btn--ghost">Download resume</a>
+        </div>
+      </div>
+
+      <div class="hero__editor" aria-hidden="true">
+        <div class="editor">
+          <div class="editor__bar">
+            <span class="editor_dot editor_dot--red"></span>
+            <span class="editor_dot editor_dot--yellow"></span>
+            <span class="editor_dot editor_dot--green"></span>
+            <span class="editor__filename">about-me.js</span>
+          </div>
+          <pre class="editor__body"><code><span class="tok-kw">const</span> <span class="tok-var">developer</span> <span class="tok-punc">=</span> <span class="tok-punc">{</span>
+  <span class="tok-prop">name</span><span class="tok-punc">:</span> <span class="tok-str">"Your Name"</span><span class="tok-punc">,</span>
+  <span class="tok-prop">role</span><span class="tok-punc">:</span> <span class="tok-str">"CS Student"</span><span class="tok-punc">,</span>
+  <span class="tok-prop">stack</span><span class="tok-punc">:</span> <span class="tok-punc">[</span><span class="tok-str">"JS"</span><span class="tok-punc">,</span> <span class="tok-str">"Python"</span><span class="tok-punc">,</span> <span class="tok-str">"SQL"</span><span class="tok-punc">]</span><span class="tok-punc">,</span>
+  <span class="tok-prop">learning</span><span class="tok-punc">:</span> <span class="tok-str">"always"</span><span class="tok-punc">,</span>
+  <span class="tok-prop">available</span><span class="tok-punc">:</span> <span id="typedBool" class="tok-bool">true</span><span class="tok-punc">,</span>
+<span class="tok-punc">}</span><span class="tok-punc">;</span></code></pre>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ ABOUT ============ -->
+  <section class="about" id="about">
+    <div class="section_inner about_grid">
+      <div class="about__label">
+        <p class="section__eyebrow">01 / about</p>
+      </div>
+      <div class="about__content">
+        <p class="about__lead">
+          I'm a Computer Science undergraduate who likes taking a problem apart
+          until it's obvious how to solve it — then building that solution as
+          cleanly as I can.
+        </p>
+        <p>
+          Outside coursework, I spend time on personal projects that push me past
+          what a class assignment requires: full-stack apps, small dev tools, and
+          the occasional over-engineered script that saves me ten minutes a week.
+          I care about code that's easy for someone else to read six months later —
+          usually because that someone is me.
+        </p>
+        <div class="about__facts">
+          <div class="fact">
+            <p class="fact__value">3+</p>
+            <p class="fact__label">years writing code</p>
+          </div>
+          <div class="fact">
+            <p class="fact__value">10+</p>
+            <p class="fact__label">projects shipped</p>
+          </div>
+          <div class="fact">
+            <p class="fact__value">CS</p>
+            <p class="fact__label">degree in progress</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ SKILLS ============ -->
+  <section class="skills" id="skills">
+    <div class="section__inner">
+      <p class="section__eyebrow">02 / skills</p>
+      <h2 class="section__title">Tools I reach for</h2>
+
+      <div class="skills__grid">
+        <div class="skill-group">
+          <h3>Languages</h3>
+          <ul class="skill-tags">
+            <li>JavaScript</li>
+            <li>TypeScript</li>
+            <li>Python</li>
+            <li>Java</li>
+            <li>C++</li>
+            <li>SQL</li>
+          </ul>
+        </div>
+        <div class="skill-group">
+          <h3>Web & Frameworks</h3>
+          <ul class="skill-tags">
+            <li>React</li>
+            <li>Next.js</li>
+            <li>Node.js</li>
+            <li>Express</li>
+            <li>Tailwind CSS</li>
+          </ul>
+        </div>
+        <div class="skill-group">
+          <h3>Data & Tools</h3>
+          <ul class="skill-tags">
+            <li>PostgreSQL</li>
+            <li>MongoDB</li>
+            <li>Git & GitHub</li>
+            <li>Docker</li>
+            <li>Linux</li>
+          </ul>
+        </div>
+        <div class="skill-group">
+          <h3>Currently learning</h3>
+          <ul class="skill-tags">
+            <li>System Design</li>
+            <li>Rust</li>
+            <li>Machine Learning</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ PROJECTS ============ -->
+  <section class="projects" id="projects">
+    <div class="section__inner">
+      <p class="section__eyebrow">03 / projects</p>
+      <h2 class="section__title">Selected work</h2>
+
+      <div class="projects__list">
+
+        <article class="project">
+          <div class="project__meta">
+            <h3>Course Registration System</h3>
+            <p class="project__desc">
+              A full-stack app for students to browse, register, and drop courses
+              each semester, with a separate admin panel for managing seat limits
+              and schedules.
+            </p>
+            <ul class="project__tags">
+              <li>React</li><li>Node.js</li><li>PostgreSQL</li>
+            </ul>
+          </div>
+          <div class="project__links">
+            <a href="#" class="proj-link">Live demo →</a>
+            <a href="#" class="proj-link">Source →</a>
+          </div>
+        </article>
+
+        <article class="project">
+          <div class="project__meta">
+            <h3>Study Notes AI Assistant</h3>
+            <p class="project__desc">
+              A tool that answers questions from a student's own uploaded notes and
+              PDFs, citing the source document for every answer instead of guessing.
+            </p>
+            <ul class="project__tags">
+              <li>Next.js</li><li>Supabase</li><li>OpenAI API</li>
+            </ul>
+          </div>
+          <div class="project__links">
+            <a href="#" class="proj-link">Live demo →</a>
+            <a href="#" class="proj-link">Source →</a>
+          </div>
+        </article>
+
+        <article class="project">
+          <div class="project__meta">
+            <h3>Pathfinding Visualizer</h3>
+            <p class="project__desc">
+              An interactive grid that visualizes Dijkstra's, A*, and BFS solving
+              a maze in real time — built to actually understand the algorithms
+              from the DSA course, not just pass the exam.
+            </p>
+            <ul class="project__tags">
+              <li>JavaScript</li><li>Canvas API</li>
+            </ul>
+          </div>
+          <div class="project__links">
+            <a href="#" class="proj-link">Live demo →</a>
+            <a href="#" class="proj-link">Source →</a>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CONTACT ============ -->
+  <section class="contact" id="contact">
+    <div class="section_inner contact_grid">
+      <div>
+        <p class="section__eyebrow">04 / contact</p>
+        <h2 class="section__title">Let's build something.</h2>
+        <p class="contact__sub">
+          Open to internships, freelance work, or just talking through an
+          interesting problem. I usually reply within a day.
+        </p>
+        <ul class="contact__list">
+          <li><a href="mailto:you@example.com">you@example.com</a></li>
+          <li><a href="https://github.com/yourusername" target="_blank" rel="noopener">github.com/yourusername</a></li>
+          <li><a href="https://linkedin.com/in/yourusername" target="_blank" rel="noopener">linkedin.com/in/yourusername</a></li>
+        </ul>
+      </div>
+
+      <form class="contact__form" id="contactForm" novalidate>
+        <label class="field">
+          <span>Name</span>
+          <input type="text" name="name" required />
+        </label>
+        <label class="field">
+          <span>Email</span>
+          <input type="email" name="email" required />
+        </label>
+        <label class="field">
+          <span>Message</span>
+          <textarea name="message" rows="4" required></textarea>
+        </label>
+        <button type="submit" class="btn btn--primary">Send message</button>
+        <p class="form__status" id="formStatus" role="status" aria-live="polite"></p>
+      </form>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="section_inner footer_inner">
+      <p>&copy; <span id="year"></span> Your Name. Built from scratch, no template.</p>
+      <a href="#home" class="footer__top">back to top ↑</a>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
