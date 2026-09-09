@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact - Chitrali Dry Fruits</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+    <style>
+        .contact-hero {
+            background: linear-gradient(135deg, #fdf8f2 0%, #f5ede4 100%);
+            padding: 50px 0;
+            text-align: center;
+        }
+        .contact-hero h1 {
+            font-size: 2.8rem;
+            color: #2d2a24;
+        }
+        .contact-hero p {
+            color: #5a554a;
+            font-size: 1.1rem;
+        }
+        .contact-section {
+            padding: 60px 0;
+        }
+        .contact-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 50px;
+        }
+        .contact-info h2 {
+            font-size: 1.8rem;
+            color: #2d2a24;
+            margin-bottom: 16px;
+        }
+        .contact-info p {
+            color: #5a554a;
+            margin-bottom: 24px;
+        }
+        .contact-detail {
+            display: flex;
+            align-items: center;
+            gap: 14px;
+            margin-bottom: 16px;
+            padding: 14px 18px;
+            background: #f5f0ea;
+            border-radius: 12px;
+            transition: 0.3s;
+        }
+        .contact-detail:hover {
+            background: #ede6dc;
+            transform: translateX(4px);
+        }
+        .contact-detail i {
+            font-size: 1.4rem;
+            color: #8b2f1a;
+            width: 32px;
+            text-align: center;
+        }
+        .contact-detail div strong {
+            display: block;
+            font-size: 0.8rem;
+            color: #888;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+        .contact-detail div span {
+            color: #2d2a24;
+            font-weight: 500;
+        }
+        .contact-form {
+            background: #fff;
+            padding: 30px;
+            border-radius: 16px;
+            box-shadow: 0 4px 30px rgba(0,0,0,0.06);
+            border: 1px solid #f0ebe4;
+        }
+        .contact-form h3 {
+            font-size: 1.4rem;
+            color: #2d2a24;
+            margin-bottom: 6px;
+        }
+        .contact-form p {
+            color: #888;
+            margin-bottom: 20px;
+            font-size: 0.95rem;
+        }
+        .contact-form label {
+            display: block;
+            font-weight: 600;
+            color: #2d2a24;
+            margin-bottom: 4px;
+            font-size: 0.9rem;
+        }
+        .contact-form input,
+        .contact-form textarea,
+        .contact-form select {
+            width: 100%;
+            padding: 12px 16px;
+            border: 2px solid #e8e0d6;
+            border-radius: 10px;
+            font-size: 1rem;
+            transition: 0.3s;
+            margin-bottom: 16px;
+            font-family: inherit;
+            background: #faf8f5;
+        }
+        .contact-form input:focus,
+        .contact-form textarea:focus,
+        .contact-form select:focus {
+            border-color: #8b2f1a;
+            outline: none;
+            background: #fff;
+        }
+        .contact-form textarea {
+            resize: vertical;
+            min-height: 120px;
+        }
+        .contact-form .btn-primary {
+            width: 100%;
+            text-align: center;
+        }
+        .contact-form .btn-primary i {
+            margin-right: 8px;
+        }
+        .map-section {
+            padding-bottom: 60px;
+        }
+        .map-section iframe {
+            width: 100%;
+            height: 300px;
+            border-radius: 16px;
+            border: none;
+        }
+        .social-links {
+            display: flex;
+            gap: 14px;
+            margin-top: 20px;
+        }
+        .social-links a {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 48px;
+            height: 48px;
+            border-radius: 50%;
+            background: #f5f0ea;
+            color: #2d2a24;
+            font-size: 1.2rem;
+            transition: 0.3s;
+        }
+        .social-links a:hover {
+            background: #8b2f1a;
+            color: #fff;
+            transform: translateY(-3px);
+        }
+        .whatsapp-float {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            background: #25D366;
+            color: #fff;
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2rem;
+            box-shadow: 0 4px 20px rgba(37, 211, 102, 0.4);
+            z-index: 999;
+            transition: 0.3s;
+            text-decoration: none;
+        }
+        .whatsapp-float:hover {
+            transform: scale(1.08);
+            box-shadow: 0 8px 30px rgba(37, 211, 102, 0.5);
+        }
+        @media (max-width: 768px) {
+            .contact-grid {
+                grid-template-columns: 1fr;
+            }
+            .contact-hero h1 {
+                font-size: 2rem;
+            }
+            .contact-form {
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- ========== HEADER ========== -->
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>Chitrali Dry Fruits</h1>
+                <span>Pure Taste from the Mountains</span>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="shop.html">Shop</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html" class="active">Contact</a></li>
+                    <li><a href="login.html">Login</a></li>
+                </ul>
+            </nav>
+            <div class="header-actions">
+                <a href="#" class="cart-icon"><i class="fas fa-shopping-cart"></i> <span class="cart-count">0</span></a>
+                <button class="mobile-menu-btn"><i class="fas fa-bars"></i></button>
+            </div>
+        </div>
+    </header>
+
+    <!-- ========== CONTACT HERO ========== -->
+    <section class="contact-hero">
+        <div class="container">
+            <h1>Get in Touch</h1>
+            <p>We'd love to hear from you! Reach out for inquiries, orders, or feedback.</p>
+        </div>
+    </section>
+
+    <!-- ========== CONTACT SECTION ========== -->
+    <section class="contact-section">
+        <div class="container">
+            <div class="contact-grid">
+                <!-- Left: Contact Info -->
+                <div class="contact-info">
+                    <h2>Let's Connect</h2>
+                    <p>Our team is here to help with your orders, questions, or custom requests.</p>
+
+                    <div class="contact-detail">
+                        <i class="fas fa-phone-alt"></i>
+                        <div>
+                            <strong>Phone</strong>
+                            <span>+92 8900211899</span>
+                        </div>
+                    </div>
+                    <div class="contact-detail">
+                        <i class="fab fa-whatsapp"></i>
+                        <div>
+                            <strong>WhatsApp</strong>
+                            <span>+92 300 1234567</span>
+                        </div>
+                    </div>
+                    <div class="contact-detail">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <strong>Email</strong>
+                            <span>info@chitralidryfruits.com</span>
+                        </div>
+                    </div>
+                    <div class="contact-detail">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <strong>Address</strong>
+                            <span>Chitral, Khyber Pakhtunkhwa, Pakistan</span>
+                        </div>
+                    </div>
+                    <div class="contact-detail">
+                        <i class="fas fa-clock"></i>
+                        <div>
+                            <strong>Business Hours</strong>
+                            <span>Mon-Sat: 9:00 AM - 8:00 PM</span>
+                        </div>
+                    </div>
+
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+
+                <!-- Right: Contact Form -->
+                <div class="contact-form">
+                    <h3>Send a Message</h3>
+                    <p>We'll get back to you within 24 hours.</p>
+                    <form id="contactForm">
+                        <label for="contactName">Your Name</label>
+                        <input type="text" id="contactName" placeholder="Enter your full name" required />
+
+                        <label for="contactEmail">Email Address</label>
+                        <input type="email" id="contactEmail" placeholder="Enter your email" required />
+
+                        <label for="contactSubject">Subject</label>
+                        <select id="contactSubject">
+                            <option>General Inquiry</option>
+                            <option>Order Question</option>
+                            <option>Bulk Order</option>
+                            <option>Feedback</option>
+                            <option>Other</option>
+                        </select>
+
+                        <label for="contactMessage">Message</label>
+                        <textarea id="contactMessage" placeholder="Write your message here..." required></textarea>
+
+                        <button type="submit" class="btn-primary">
+                            <i class="fas fa-paper-plane"></i> Send Message
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== MAP ========== -->
+    <section class="map-section">
+        <div class="container">
+            <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26530.298932942557!2d71.786577!3d35.848817!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38e6a5e6e8f8f8f8%3A0x8f8f8f8f8f8f8f8f!2sChitral%2C%20Khyber%20Pakhtunkhwa%2C%20Pakistan!5e0!3m2!1sen!2s!4v1700000000000" 
+                allowfullscreen="" 
+                loading="lazy" 
+                referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+        </div>
+    </section>
+
+    <!-- ========== WHATSAPP FLOAT ========== -->
+    <a href="https://wa.me/923001234567" target="_blank" class="whatsapp-float">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- ========== FOOTER ========== -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <h3>Chitrali Dry Fruits</h3>
+                    <p>Experience dry fruits and nuts, sourced in the valleys of Chitral. Choose Chitrali!</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Shop</h4>
+                    <ul>
+                        <li><a href="shop.html">All Products</a></li>
+                        <li><a href="shop.html">Featured</a></li>
+                        <li><a href="shop.html">Best Sellers</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="login.html">My Account</a></li>
+                        <li><a href="login.html">Login</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h4>Get in Touch</h4>
+                    <p><i class="fas fa-phone"></i> +92 8900211899</p>
+                    <p><i class="fas fa-globe"></i> www.chitralidryfruits.com</p>
+                    <p><i class="fab fa-whatsapp"></i> WhatsApp</p>
+                    <p><i class="fas fa-envelope"></i> info@chitralidryfruits.com</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2026 Chitrali Dry Fruits. All rights reserved.</p>
+                <p>24/7 Customer Support Available</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const form = document.getElementById('contactForm');
+            if (form) {
+                form.addEventListener('submit', function(e) {
+                    e.preventDefault();
+                    const name = document.getElementById('contactName').value.trim();
+                    const email = document.getElementById('contactEmail').value.trim();
+                    const message = document.getElementById('contactMessage').value.trim();
+
+                    if (!name || !email || !message) {
+                        showNotification('Please fill in all fields 📝');
+                        return;
+                    }
+                    if (!isValidEmail(email)) {
+                        showNotification('Please enter a valid email ❌');
+                        return;
+                    }
+
+                    // Store in localStorage for demo
+                    const contactData = { name, email, message, date: new Date().toISOString() };
+                    localStorage.setItem('contactMessage', JSON.stringify(contactData));
+                    
+                    showNotification('Thank you! We\'ll get back to you soon 📨');
+                    form.reset();
+                });
+            }
+        });
+    </script>
+</body>
+</html>

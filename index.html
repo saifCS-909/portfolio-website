@@ -1,272 +1,223 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Your Name — SAIFU RAHMAT</title>
-  <meta name="description" content="Portfolio of Your Name, a Computer Science student building software projects." />
-  <link rel="icon" href="assets/icons/favicon.svg" type="image/svg+xml" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chitrali Dry Fruits - Pure Taste from the Mountains</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
 </head>
 <body>
 
-  <!-- ============ NAV ============ -->
-  <header class="nav" id="nav">
-    <div class="nav__inner">
-      <a href="#home" class="nav_logo">yourname<span class="nav_logo-dot">.</span>dev</a>
+    <!-- ========== HEADER / NAVBAR ========== -->
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>Chitrali Dry Fruits</h1>
+                <span>Pure Taste from the Mountains</span>
+            </div>
 
-      <nav class="nav__links" id="navLinks">
-        <a href="#about">about</a>
-        <a href="#skills">skills</a>
-        <a href="#projects">projects</a>
-        <a href="#contact">contact</a>
-      </nav>
+            <nav>
+                <ul>
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="shop.html">Shop</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="login.html">Login</a></li>
+                </ul>
+            </nav>
 
-      <a href="#contact" class="nav__cta">let's talk</a>
-
-      <button class="nav__toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
-        <span></span><span></span><span></span>
-      </button>
-    </div>
-  </header>
-
-  <!-- ============ HERO ============ -->
-  <section class="hero" id="home">
-    <div class="hero__inner">
-      <div class="hero__text">
-        <p class="hero__kicker">Computer Science Student</p>
-        <h1 class="hero__title">
-          I build things<br />with code, then<br />explain how they work.
-        </h1>
-        <p class="hero__sub">
-          BS Computer Science student focused on web development, data structures,
-          and building small tools that solve real problems. Currently open to
-          internships and collaborative projects.
-        </p>
-        <div class="hero__actions">
-          <a href="#projects" class="btn btn--primary">See my work</a>
-          <a href="assets/resume.pdf" class="btn btn--ghost">Download resume</a>
+            <div class="header-actions">
+                <a href="#" class="cart-icon"><i class="fas fa-shopping-cart"></i> <span class="cart-count">0</span></a>
+                <button class="mobile-menu-btn"><i class="fas fa-bars"></i></button>
+            </div>
         </div>
-      </div>
+    </header>
 
-      <div class="hero__editor" aria-hidden="true">
-        <div class="editor">
-          <div class="editor__bar">
-            <span class="editor_dot editor_dot--red"></span>
-            <span class="editor_dot editor_dot--yellow"></span>
-            <span class="editor_dot editor_dot--green"></span>
-            <span class="editor__filename">about-me.js</span>
-          </div>
-          <pre class="editor__body"><code><span class="tok-kw">const</span> <span class="tok-var">developer</span> <span class="tok-punc">=</span> <span class="tok-punc">{</span>
-  <span class="tok-prop">name</span><span class="tok-punc">:</span> <span class="tok-str">"Your Name"</span><span class="tok-punc">,</span>
-  <span class="tok-prop">role</span><span class="tok-punc">:</span> <span class="tok-str">"CS Student"</span><span class="tok-punc">,</span>
-  <span class="tok-prop">stack</span><span class="tok-punc">:</span> <span class="tok-punc">[</span><span class="tok-str">"JS"</span><span class="tok-punc">,</span> <span class="tok-str">"Python"</span><span class="tok-punc">,</span> <span class="tok-str">"SQL"</span><span class="tok-punc">]</span><span class="tok-punc">,</span>
-  <span class="tok-prop">learning</span><span class="tok-punc">:</span> <span class="tok-str">"always"</span><span class="tok-punc">,</span>
-  <span class="tok-prop">available</span><span class="tok-punc">:</span> <span id="typedBool" class="tok-bool">true</span><span class="tok-punc">,</span>
-<span class="tok-punc">}</span><span class="tok-punc">;</span></code></pre>
+    <!-- ========== SEARCH BAR ========== -->
+    <section class="search-section">
+        <div class="container">
+            <input type="text" id="searchInput" placeholder="Search products..." />
+            <button id="searchBtn"><i class="fas fa-search"></i></button>
         </div>
-      </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- ============ ABOUT ============ -->
-  <section class="about" id="about">
-    <div class="section_inner about_grid">
-      <div class="about__label">
-        <p class="section__eyebrow">01 / about</p>
-      </div>
-      <div class="about__content">
-        <p class="about__lead">
-          I'm a Computer Science undergraduate who likes taking a problem apart
-          until it's obvious how to solve it — then building that solution as
-          cleanly as I can.
-        </p>
-        <p>
-          Outside coursework, I spend time on personal projects that push me past
-          what a class assignment requires: full-stack apps, small dev tools, and
-          the occasional over-engineered script that saves me ten minutes a week.
-          I care about code that's easy for someone else to read six months later —
-          usually because that someone is me.
-        </p>
-        <div class="about__facts">
-          <div class="fact">
-            <p class="fact__value">3+</p>
-            <p class="fact__label">years writing code</p>
-          </div>
-          <div class="fact">
-            <p class="fact__value">10+</p>
-            <p class="fact__label">projects shipped</p>
-          </div>
-          <div class="fact">
-            <p class="fact__value">CS</p>
-            <p class="fact__label">degree in progress</p>
-          </div>
+    <!-- ========== HERO BANNER ========== -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h2>A STRAIGHT FROM THE VALLEYS OF CHITRAL</h2>
+                <h3>Pure Taste from the Mountains</h3>
+                <p>
+                    Hand-sorted almonds, walnuts, apricots and pistachios
+                    — sun-dried the traditional way and delivered fresh to your door, anywhere in Pakistan.
+                </p>
+                <div class="hero-stats">
+                    <div><span>12+</span> Years</div>
+                    <div><span>5,000+</span> Happy Customers</div>
+                    <div><span>100%</span> Natural</div>
+                </div>
+                <a href="shop.html" class="btn-primary">Shop Now</a>
+            </div>
+            <div class="hero-image">
+                <!-- Placeholder for hero image -->
+                <img src="images/hero-banner.jpg" alt="Chitrali Dry Fruits" />
+            </div>
         </div>
-      </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- ============ SKILLS ============ -->
-  <section class="skills" id="skills">
-    <div class="section__inner">
-      <p class="section__eyebrow">02 / skills</p>
-      <h2 class="section__title">Tools I reach for</h2>
-
-      <div class="skills__grid">
-        <div class="skill-group">
-          <h3>Languages</h3>
-          <ul class="skill-tags">
-            <li>JavaScript</li>
-            <li>TypeScript</li>
-            <li>Python</li>
-            <li>Java</li>
-            <li>C++</li>
-            <li>SQL</li>
-          </ul>
+    <!-- ========== FEATURED PRODUCTS ========== -->
+    <section class="featured-products">
+        <div class="container">
+            <h2>Featured Products</h2>
+            <div class="product-grid" id="featuredGrid">
+                <!-- Product 1 -->
+                <div class="product-card">
+                    <img src="images/pistachio.jpg" alt="Fresh Pistachio" />
+                    <h3>Fresh Pistachio</h3>
+                    <p class="price">Rs. 1,500</p>
+                    <button class="add-to-cart" data-name="Fresh Pistachio" data-price="1500">Add to Cart</button>
+                    <a href="#" class="view-btn">View</a>
+                </div>
+                <!-- Product 2 -->
+                <div class="product-card">
+                    <img src="images/mango-almond.jpg" alt="Mango & Almond Mix" />
+                    <h3>Mango &amp; Almond Mix (Mixed)</h3>
+                    <p class="price">Rs. 250</p>
+                    <button class="add-to-cart" data-name="Mango & Almond Mix" data-price="250">Add to Cart</button>
+                    <a href="#" class="view-btn">View</a>
+                </div>
+                <!-- Product 3 -->
+                <div class="product-card">
+                    <img src="images/almond-biscotti.jpg" alt="Almond Biscotti" />
+                    <h3>Almond Biscotti (Mixed)</h3>
+                    <p class="price">Rs. 600</p>
+                    <button class="add-to-cart" data-name="Almond Biscotti" data-price="600">Add to Cart</button>
+                    <a href="#" class="view-btn">View</a>
+                </div>
+                <!-- Product 4 -->
+                <div class="product-card">
+                    <img src="images/giri.jpg" alt="Giri" />
+                    <h3>Giri</h3>
+                    <p class="price">Rs. 1,650</p>
+                    <button class="add-to-cart" data-name="Giri" data-price="1650">Add to Cart</button>
+                    <a href="#" class="view-btn">View</a>
+                </div>
+            </div>
+            <div class="view-all">
+                <a href="shop.html" class="btn-secondary">View All</a>
+            </div>
         </div>
-        <div class="skill-group">
-          <h3>Web & Frameworks</h3>
-          <ul class="skill-tags">
-            <li>React</li>
-            <li>Next.js</li>
-            <li>Node.js</li>
-            <li>Express</li>
-            <li>Tailwind CSS</li>
-          </ul>
+    </section>
+
+    <!-- ========== WHY CHITRALI DRY FRUITS ========== -->
+    <section class="why-us">
+        <div class="container">
+            <h2>WHY CHITRALI DRY FRUITS?</h2>
+            <p class="subtitle">Quality you can taste.</p>
+            <div class="features-grid">
+                <div class="feature">
+                    <i class="fas fa-tree"></i>
+                    <h3>Sourced at the Source</h3>
+                    <p>Bought directly from Chitrali orchards and highland farms — no middlemen, no compromise.</p>
+                </div>
+                <div class="feature">
+                    <i class="fas fa-leaf"></i>
+                    <h3>100% Natural</h3>
+                    <p>Sun-dried the traditional way. No added sugar, preservatives, or artificial colouring.</p>
+                </div>
+                <div class="feature">
+                    <i class="fas fa-box"></i>
+                    <h3>Freshness Sealed</h3>
+                    <p>Packed in airtight pouches right before dispatch to lock in flavour and crunch.</p>
+                </div>
+                <div class="feature">
+                    <i class="fas fa-truck"></i>
+                    <h3>Nationwide Delivery</h3>
+                    <p>Cash on delivery or bank transfer, shipped fast across Pakistan.</p>
+                </div>
+            </div>
         </div>
-        <div class="skill-group">
-          <h3>Data & Tools</h3>
-          <ul class="skill-tags">
-            <li>PostgreSQL</li>
-            <li>MongoDB</li>
-            <li>Git & GitHub</li>
-            <li>Docker</li>
-            <li>Linux</li>
-          </ul>
+    </section>
+
+    <!-- ========== TESTIMONIALS ========== -->
+    <section class="testimonials">
+        <div class="container">
+            <h2>What Our Customers Say</h2>
+            <div class="testimonial-grid">
+                <div class="testimonial-card">
+                    <div class="stars">★★★★★</div>
+                    <p>"The almonds are incredibly fresh and the packaging is beautiful. Ordered the gift box for Eid and everyone loved it!"</p>
+                    <span class="customer">— Sada M., Lahore</span>
+                </div>
+                <div class="testimonial-card">
+                    <div class="stars">★★★★★</div>
+                    <p>"Best walnuts I've had in years. You can really taste the difference from Chitral."</p>
+                    <span class="customer">— Usman T., Islamabad</span>
+                </div>
+                <div class="testimonial-card">
+                    <div class="stars">★★★★★</div>
+                    <p>"Quick delivery and great customer service on WhatsApp. Will order again."</p>
+                    <span class="customer">— Hina A., Karachi</span>
+                </div>
+            </div>
         </div>
-        <div class="skill-group">
-          <h3>Currently learning</h3>
-          <ul class="skill-tags">
-            <li>System Design</li>
-            <li>Rust</li>
-            <li>Machine Learning</li>
-          </ul>
+    </section>
+
+    <!-- ========== NEWSLETTER ========== -->
+    <section class="newsletter">
+        <div class="container">
+            <h2>Get 10% off your first order</h2>
+            <p>Subscribe for seasonal offers and new arrivals from the mountains.</p>
+            <form id="newsletterForm">
+                <input type="email" id="newsletterEmail" placeholder="Your email address" required />
+                <button type="submit">Subscribe</button>
+            </form>
         </div>
-      </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- ============ PROJECTS ============ -->
-  <section class="projects" id="projects">
-    <div class="section__inner">
-      <p class="section__eyebrow">03 / projects</p>
-      <h2 class="section__title">Selected work</h2>
+    <!-- ========== FOOTER ========== -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <h3>Chitrali Dry Fruits</h3>
+                    <p>Experience dry fruits and nuts, sourced in the valleys of Chitral. Choose Chitrali!</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Shop</h4>
+                    <ul>
+                        <li><a href="#">All Products</a></li>
+                        <li><a href="#">Featured</a></li>
+                        <li><a href="#">Best Sellers</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="login.html">My Account</a></li>
+                        <li><a href="login.html">Login</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h4>Get in Touch</h4>
+                    <p><i class="fas fa-phone"></i> +92 273951171</p>
+                    <p><i class="fas fa-globe"></i> </p>
+                    <p><i class="fab fa-whatsapp"></i> WhatsApp</p>
+                    <p><i class="fas fa-envelope"></i> saifurahmatdvs909@gmail.com</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2026 Chitrali Dry Fruits. All rights reserved.</p>
+                <p>24/7 Customer Support Available</p>
+            </div>
+        </div>
+    </footer>
 
-      <div class="projects__list">
-
-        <article class="project">
-          <div class="project__meta">
-            <h3>Course Registration System</h3>
-            <p class="project__desc">
-              A full-stack app for students to browse, register, and drop courses
-              each semester, with a separate admin panel for managing seat limits
-              and schedules.
-            </p>
-            <ul class="project__tags">
-              <li>React</li><li>Node.js</li><li>PostgreSQL</li>
-            </ul>
-          </div>
-          <div class="project__links">
-            <a href="#" class="proj-link">Live demo →</a>
-            <a href="#" class="proj-link">Source →</a>
-          </div>
-        </article>
-
-        <article class="project">
-          <div class="project__meta">
-            <h3>Study Notes AI Assistant</h3>
-            <p class="project__desc">
-              A tool that answers questions from a student's own uploaded notes and
-              PDFs, citing the source document for every answer instead of guessing.
-            </p>
-            <ul class="project__tags">
-              <li>Next.js</li><li>Supabase</li><li>OpenAI API</li>
-            </ul>
-          </div>
-          <div class="project__links">
-            <a href="#" class="proj-link">Live demo →</a>
-            <a href="#" class="proj-link">Source →</a>
-          </div>
-        </article>
-
-        <article class="project">
-          <div class="project__meta">
-            <h3>Pathfinding Visualizer</h3>
-            <p class="project__desc">
-              An interactive grid that visualizes Dijkstra's, A*, and BFS solving
-              a maze in real time — built to actually understand the algorithms
-              from the DSA course, not just pass the exam.
-            </p>
-            <ul class="project__tags">
-              <li>JavaScript</li><li>Canvas API</li>
-            </ul>
-          </div>
-          <div class="project__links">
-            <a href="#" class="proj-link">Live demo →</a>
-            <a href="#" class="proj-link">Source →</a>
-          </div>
-        </article>
-
-      </div>
-    </div>
-  </section>
-
-  <!-- ============ CONTACT ============ -->
-  <section class="contact" id="contact">
-    <div class="section_inner contact_grid">
-      <div>
-        <p class="section__eyebrow">04 / contact</p>
-        <h2 class="section__title">Let's build something.</h2>
-        <p class="contact__sub">
-          Open to internships, freelance work, or just talking through an
-          interesting problem. I usually reply within a day.
-        </p>
-        <ul class="contact__list">
-          <li><a href="mailto:you@example.com">you@example.com</a></li>
-          <li><a href="https://github.com/yourusername" target="_blank" rel="noopener">github.com/yourusername</a></li>
-          <li><a href="https://linkedin.com/in/yourusername" target="_blank" rel="noopener">linkedin.com/in/yourusername</a></li>
-        </ul>
-      </div>
-
-      <form class="contact__form" id="contactForm" novalidate>
-        <label class="field">
-          <span>Name</span>
-          <input type="text" name="name" required />
-        </label>
-        <label class="field">
-          <span>Email</span>
-          <input type="email" name="email" required />
-        </label>
-        <label class="field">
-          <span>Message</span>
-          <textarea name="message" rows="4" required></textarea>
-        </label>
-        <button type="submit" class="btn btn--primary">Send message</button>
-        <p class="form__status" id="formStatus" role="status" aria-live="polite"></p>
-      </form>
-    </div>
-  </section>
-
-  <footer class="footer">
-    <div class="section_inner footer_inner">
-      <p>&copy; <span id="year"></span> Your Name. Built from scratch, no template.</p>
-      <a href="#home" class="footer__top">back to top ↑</a>
-    </div>
-  </footer>
-
-  <script src="js/script.js"></script>
+    <!-- ========== JAVASCRIPT ========== -->
+    <script src="js/script.js"></script>
 </body>
 </html>
